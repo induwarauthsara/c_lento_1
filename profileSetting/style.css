@@ -1,0 +1,58 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+#left {
+  width: 30%;
+}
+
+#right {
+  width: 70%;
+}
+
+.shadowBox {
+  width: 200px;
+  height: 150px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  /* Horizontal offset, vertical offset, blur radius, color */
+  margin: 20px;
+  padding: 20px;
+  position: absolute;
+  border-radius: 30px;
+  left: 100px;
+}
+
+.input_set {
+  width: 100%;
+}
+
+input {
+  padding: 15px;
+  margin: 3px;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid black;
+  size: 2rem;
+}
+
+.ff {
+  width: 39.5%;
+  display: line;
+}
+
+.submit {
+  background-color: rgba(236, 0, 146, 0.938);
+  font-weight: bold;
+  color: white;
+}
+
+.image-upload-camera {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
