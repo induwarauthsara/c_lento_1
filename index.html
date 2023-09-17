@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CLento</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body class="w-100 h-100">
+    <div class="container">
+        <!-- Home---------------------------------------------------------------------------- -->
+        <nav class="navbar bg-body-tertiary col-12 p-3">
+            <div class="container-fluid">
+                <a class="col-1" href="#"><img src="img/home/logo.png" alt="" class="home_logo"></a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <form class="col-6 shadow rounded-5 navbarform" role="search">
+                    <input class="col-12 rounded-5 p-3 border-0" type="search" placeholder="Search" aria-label="Search">
+                    <button
+                        class="btn top-50 btn-danger position-absolute search_btn translate-middle search_btn rounded-circle"
+                        type="submit"><i class='bx bg-transparent bx-search fw-bold'></i></button>
+                </form>
+
+                <div
+                    class=" dropdown d-inline-flex flex justify-content-center gap-1 dropstart shadow p-1 rounded-3">
+
+                    <i class='bx bx-menu fs-3 nav-link mt-1' href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"></i>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                        <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                        <li><a class="dropdown-item" href="#">Massages</a></li>
+                        <li><a class="dropdown-item" href="#">Help Center</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                    <img src="/img/home/Male User.png" alt="" class="profile_img">
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- category --------------------------------------------------->
+
+        <div class="row container mt-3 category_container">
+            <div class="col-lg-8 col-6 d-inline-flex overflow-x-auto">
+                <div class=" text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+                <div class="text-center category_div mx-2">
+                    <img src="img/home/Home.png" alt="" class="category_icon">
+                    <div class="category_text mt-2">
+                        Home
+                    </div>
+                </div>
+
+                <div class="text-center category_div mx-2 align-items-center">
+                    <div class="category_text fs-3">
+                        >
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-3 h-100">
+                <div class="w-50 text-center d-inline-flex btn btn_filter">
+                    <img src="img/home/Slider.png" alt="" class="filter_icon rounded-2">
+                    <div class="filter_text bg-white p-1">
+                        Filters
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-3">
+                <div class="d-inline-flex toggle_box">
+                    <div class="toggletext d-none d-lg-block">
+                        Display befor tex
+                    </div>
+                    <div class="togglediv">
+                        <img src="img/home/Toggle On.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- card ------------------------------------------------------------------>
+
+        <section class="product_card row container">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div col-12 card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div col-12 card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow rounded-4 my-4 col-11">
+                    <div class="product_img_div col-12 card-img-top">
+                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                        <img src="/img/home/Component 1.png"
+                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                            alt="...">
+                    </div>
+                    <div class="card-body ">
+                        <div class="d-flex justify-content-between card_head card-text">
+                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                        </div>
+                        <div class="card-text">
+                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                            <div class=" card-text text-center card_text3">$85.80</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="container justify-content-center align-items-center d-flex m-4">
+            <div class="text-center p-2">
+                <div class="fs-5 fw-bold mb-3">Continue exploring</div>
+                <button class="btn btn-dark" id="btn">Show more</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- footer -------------------------------------------->
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+
+            <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-6 col-xl-3 mx-auto mt-0">
+                    <img src="img/home/logo.png" class="fotter_logo" alt="">
+                    <p class="foter_text1">Here we are the C_Lento™ to support you
+                        for accomplish your dessire by selling
+                        high quality products.</p>
+                </div>
+
+                <div class="col-md-4 col-lg-6 col-xl-6 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Maradana, Colombo 10, Sri Lanka
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> cLento@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> +94112 345 876
+                    </p>
+                    <p>
+                        <i class="fas fa-print	 mr-3"></i> +94112 345 877
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-7 col-lg-8">
+                    <p> Copyright © 2023 CLento.lk All Rights Reserved.
+                        <!-- <a href="#" style="text-decoration: none;">
+                            <strong class="text-warning">The Providers</strong>
+                        </a> -->
+                    </p>
+
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Signin or Signup---------------------------------------------------------------------------- -->
+
+    <div class="col-12 h-100 d-flex justify-content-center align-items-center color position-fixed top-50 start-50 translate-middle overlay visually-hidden"
+        id="overlay">
+        <div class="col col-10 col-lg-6 shadow-lg border-1 p-3 mt-3 justify-content-center rounded-3 glass" id="box1">
+            <div
+                class="form-header d-flex align-items-center justify-content-center flex-row col-12 position-relative bg-transparent">
+                <img id="close" src="img/multiply.png" alt="" class="closeimg position-absolute start-0 bg-transparent">
+                <div class="fw-bold bg-transparent">Login or Signup</div>
+            </div>
+
+            <div class="divider position-relative">
+                <hr>
+            </div>
+
+            <div class="form-content position-relative col-12 bg-transparent">
+                <header class="head_text start-50 d-flex fs-4 justify-content-center mb-4 opacity-75 bg-transparent">
+                    Welcome to CLento</header>
+
+                <form action="#" class="bg-transparent">
+
+                    <input type="email" placeholder="Email" class="form-control mb-2 p-3">
+                    <input type="password" placeholder="Password" class="form-control mb-2 p-3">
+
+                    <p class="mt-4 ptext mb-4 opacity-50 bg-transparent fw-bold">We’ll call or text you to confirm your
+                        number.
+                        Standard message and data rates apply. 
+                        Privacy Policy</p>
+
+                    <button type="submit" class="continueBtn col-12 mb-2" id="continue1">
+                        Continue
+                    </button>
+                </form>
+            </div>
+
+            <div class="bg-transparent mt-4">
+                <!-- <div class="divider position-relative py-4 bg-transparent">
+                    <hr>
+                    <span class="label position-absolute top-50 start-50 translate-middle px-3 bg-transparent">OR</span>
+                </div> -->
+                <button type="submit"
+                    class="p-3 btn-light border border-black btn col-12 mb-2 d-inline-flex justify-content-center position-relative">
+                    <img src="img/Facebook.png" width="25" class=" me-2 bg-transparent start-0 position-absolute mx-3"
+                        alt="">
+                    <div class="opacity-75 bg-transparentn btntext fw-bold">Continue with Facebook</div>
+                </button>
+
+                <button type="submit"
+                    class="btn-light border border-black btn col-12 mb-2 d-inline-flex justify-content-center position-relative p-3">
+                    <img src="img/Google.png" width="25" class=" me-2 bg-transparent start-0 position-absolute mx-3"
+                        alt="">
+                    <div class="opacity-75 bg-transparentn btntext fw-bold">Continue with Google</div>
+                </button>
+
+                <button type="submit"
+                    class="btn-light border border-black btn col-12 mb-2 d-inline-flex justify-content-center position-relative align-items-center p-3">
+                    <img src="img/Apple Logo.png" width="25" class=" me-2 bg-transparent start-0 position-absolute mx-3"
+                        alt="">
+                    <div class="opacity-75 bg-transparentn btntext fw-bold">Continue with Apple</div>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- signup ------------------------------------------------->
+        <div class="col col-10 col-lg-6 shadow-lg border-1 p-3 mt-3 justify-content-center rounded-3 glass visually-hidden"
+            id="box2">
+            <div
+                class="form-header d-flex align-items-center justify-content-center flex-row col-12 position-relative bg-transparent">
+                <img id="close1" src="img/multiply.png" alt=""
+                    class="closeimg position-absolute start-0 bg-transparent">
+                <div class="fw-bold bg-transparent">Sign up</div>
+            </div>
+
+            <div class="divider position-relative">
+                <hr>
+            </div>
+
+            <div class="form-content position-relative col-12 bg-transparent">
+                <header class="head_text start-50 d-flex fs-4 justify-content-center mb-4 opacity-75 bg-transparent">
+                    Welcome to CLento</header>
+
+                <form action="#" class="bg-transparent">
+
+                    <input type="text" placeholder="Email code" class="form-control mb-2 p-3">
+
+                    <p class="mt-4 ptext mb-4 bg-transparent fw-bold mx-1">Resend code <span class="mx-3">1.60s</span>
+                    </p>
+
+                    <button type="submit" class="continueBtn col-12 mb-4" id="continue2">
+                        Continue
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- step 01 ------------------------------------------------->
+        <div class="col col-10 col-lg-6 shadow-lg border-1 p-3 mt-3 justify-content-center rounded-3 glass visually-hidden"
+            id="box3">
+            <div
+                class="form-header d-flex align-items-center justify-content-center flex-row col-12 position-relative bg-transparent">
+                <img id="close2" src="img/multiply.png" alt=""
+                    class="closeimg position-absolute start-0 bg-transparent">
+                <div class="fw-bold bg-transparent">Step 01</div>
+            </div>
+
+            <div class="divider position-relative">
+                <hr>
+            </div>
+
+            <div class="form-content position-relative col-12 bg-transparent">
+
+                <form action="#" class="bg-transparent">
+
+                    <input type="text" placeholder="First Name" class="form-control mb-2 p-3">
+                    <input type="text" placeholder="Last Name" class="form-control mb-2 p-3">
+
+                    <button type="submit" class="continueBtn col-12 mb-5 mt-3" id="continue3">
+                        Continue
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- step 02 ------------------------------------------------->
+        <div class="col col-10 col-lg-6 shadow-lg border-1 p-3 mt-3 justify-content-center rounded-3 glass visually-hidden"
+            id="box4">
+            <div
+                class="form-header d-flex align-items-center justify-content-center flex-row col-12 position-relative bg-transparent">
+                <img id="close3" src="img/multiply.png" alt=""
+                    class="closeimg position-absolute start-0 bg-transparent">
+                <div class="fw-bold bg-transparent">Step 02</div>
+            </div>
+
+            <div class="divider position-relative">
+                <hr>
+            </div>
+
+            <div class="form-content position-relative col-12 bg-transparent">
+
+                <div class="profilepic_div start-50 w-100 d-flex justify-content-center align-items-center">
+                    <div class="bg-body-secondary profilepic_div2 rounded-circle">
+                        <img src="/img/home/Camera.png" alt="" class="camicon">
+                    </div>
+                </div>
+
+                <button type="submit" class="continueBtn col-12 mb-5 mt-3" id="continue4">
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="./index.js"></script>
+    <script>
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
