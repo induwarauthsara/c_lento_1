@@ -19,29 +19,24 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
-<body class="w-100 h-100">
-    <div class="container">
-        <!-- Home---------------------------------------------------------------------------- -->
-        <nav class="navbar bg-body-tertiary col-12 p-3">
-            <div class="container-fluid">
-                <a class="col-1" href="#"><img src="img/home/logo.png" alt="" class="home_logo"></a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
+<body>
 
-                <form class="col-6 shadow rounded-5 navbarform" role="search">
-                    <input class="col-12 rounded-5 p-3 border-0" type="search" placeholder="Search" aria-label="Search">
-                    <button
-                        class="btn top-50 btn-danger position-absolute search_btn translate-middle search_btn rounded-circle"
-                        type="submit"><i class='bx bg-transparent bx-search fw-bold'></i></button>
-                </form>
+    <!-- Home---------------------------------------------------------------------------- -->
+    <nav class="navbar bg-light navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/home/logo.png" alt="" class="home_logo"></a>
 
-                <div
-                    class=" dropdown d-inline-flex flex justify-content-center gap-1 dropstart shadow p-1 rounded-3">
+            <form class="shadow rounded-5 navbarform mx-auto" role="search">
+                <input class="col-12 rounded-5 p-3 border-0" type="search" placeholder="Search" aria-label="Search">
+                <button
+                    class="btn top-50 btn-danger position-absolute search_btn translate-middle search_btn rounded-circle"
+                    type="submit"><i class='bx bg-transparent bx-search fw-bold'></i></button>
+            </form>
 
-                    <i class='bx bx-menu fs-3 nav-link mt-1' href="#" role="button" data-bs-toggle="dropdown"
+            <div class="shadow p-1 rounded-3 d-flex justify-content-center p-1 ms-auto">
+
+                <div class="dropdown dropstart mt-1">
+                    <i class='bx bx-menu fs-3' href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"></i>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Account</a></li>
@@ -54,16 +49,20 @@
                         </li>
                         <li><a class="dropdown-item" href="#">Log out</a></li>
                     </ul>
-                    <img src="/img/home/Male User.png" alt="" class="profile_img">
                 </div>
+
+                <img src="/img/home/Male User.png" alt="" class="profile_img">
             </div>
-        </nav>
+
+        </div>
+    </nav>
 
 
 
-        <!-- category --------------------------------------------------->
+    <!-- category --------------------------------------------------->
 
-        <div class="row container mt-3 category_container">
+    <div class="container category_container">
+        <div class="row ">
             <div class="col-lg-8 col-6 d-inline-flex overflow-x-auto">
                 <div class=" text-center category_div mx-2">
                     <img src="img/home/Home.png" alt="" class="category_icon">
@@ -146,175 +145,151 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
 
 
-        <!-- card ------------------------------------------------------------------>
+    <!-- card ------------------------------------------------------------------>
 
-        <section class="product_card row container">
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
+    <div class="container">
+        <section class="product_card">
+            <div class="row g-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow rounded-4">
+                        <div class="product_img_div card-img-top">
+                            <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                            <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                            <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                            <img src="/img/home/Component 1.png"
+                                class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                                alt="...">
                         </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between card_head card-text">
+                                One Night<span><i class='bx bx-star'></i>0.5</span>
+                            </div>
+                            <div class="card-text">
+                                <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                                <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                                <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                                <div class=" card-text text-center card_text3">$85.80</div>
+                            </div>
+    
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
-                        </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow rounded-4">
+                        <div class="product_img_div card-img-top">
+                            <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                            <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                            <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                            <img src="/img/home/Component 1.png"
+                                class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                                alt="...">
                         </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between card_head card-text">
+                                One Night<span><i class='bx bx-star'></i>0.5</span>
+                            </div>
+                            <div class="card-text">
+                                <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                                <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                                <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                                <div class=" card-text text-center card_text3">$85.80</div>
+                            </div>
+    
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div col-12 card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
-                        </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div col-12 card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
-                    </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow rounded-4">
+                        <div class="product_img_div card-img-top">
+                            <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                            <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                            <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                            <img src="/img/home/Component 1.png"
+                                class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                                alt="...">
                         </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between card_head card-text">
+                                One Night<span><i class='bx bx-star'></i>0.5</span>
+                            </div>
+                            <div class="card-text">
+                                <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                                <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                                <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                                <div class=" card-text text-center card_text3">$85.80</div>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow rounded-4 my-4 col-11">
-                    <div class="product_img_div col-12 card-img-top">
-                        <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
-                        <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
-                        <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
-                        <img src="/img/home/Component 1.png"
-                            class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
-                            alt="...">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow rounded-4">
+                        <div class="product_img_div card-img-top">
+                            <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                            <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                            <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                            <img src="/img/home/Component 1.png"
+                                class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                                alt="...">
+                        </div>
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between card_head card-text">
+                                One Night<span><i class='bx bx-star'></i>0.5</span>
+                            </div>
+                            <div class="card-text">
+                                <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                                <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                                <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                                <div class=" card-text text-center card_text3">$85.80</div>
+                            </div>
+    
+                        </div>
                     </div>
-                    <div class="card-body ">
-                        <div class="d-flex justify-content-between card_head card-text">
-                            One Night<span><i class='bx bx-star'></i>0.5</span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card shadow rounded-4">
+                        <div class="product_img_div card-img-top">
+                            <img src="img/home/Favorite.png" class="position-absolute harticon top-0 end-0" alt="">
+                            <img src="img/home/Back To.png" class="position-absolute backicon start-0" alt="">
+                            <img src="img/home/To.png" class="position-absolute toicon end-0" alt="">
+                            <img src="/img/home/Component 1.png"
+                                class=" rounded-4 border border-5 border-white product_img object-fit-fill col-12"
+                                alt="...">
                         </div>
-                        <div class="card-text">
-                            <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
-                            <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
-                            <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
-                            <div class=" card-text text-center card_text3">$85.80</div>
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-between card_head card-text">
+                                One Night<span><i class='bx bx-star'></i>0.5</span>
+                            </div>
+                            <div class="card-text">
+                                <h5 class="card-title text-center mt-2 fw-bold">Nigambo,Sri lanka</h5>
+                                <p class="card-text text-center card_text1 m-0">Hosted by Hansana Gunarathna</p>
+                                <p class="card-text text-center card_text2 mt-1">Sep 15-18</p>
+                                <div class=" card-text text-center card_text3">$85.80</div>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
             </div>
 
         </section>
+    </div>
 
 
-        <div class="container justify-content-center align-items-center d-flex m-4">
+    <div class="justify-content-center align-items-center d-flex m-4">
+        <div class="container">
             <div class="text-center p-2">
                 <div class="fs-5 fw-bold mb-3">Continue exploring</div>
                 <button class="btn btn-dark" id="btn">Show more</button>
             </div>
         </div>
-
     </div>
 
 
