@@ -42,7 +42,7 @@ if(empty($email)){
 
             $_SESSION["u"] = $user_details;
 
-        echo("Success");
+        echo("signIn");
 
         }else{
             echo("Your password is wrong");
@@ -50,11 +50,11 @@ if(empty($email)){
       
         
 
-    }else{
+    }else if($user_rs->num_rows == 0){
 
         $veri = uniqid();
 
-          Database::iud("INSERT INTO `customer`(`email`,`password`,`registered_date`,`verification_code`) VALUES('".$email."','".$password."','".$date."','".$veri."')");
+          Database::iud("INSERT INTO `customer`(`email`,`password`,`registered_date`,`verification_code`,`gender_gender_id`) VALUES('".$email."','".$password."','".$date."','".$veri."','1')");
         
        $user_id = Database::$connection->insert_id;
 
@@ -115,6 +115,8 @@ if(empty($email)){
             echo("Something went wrong");
         }
 
+    }else{
+        echo("Duplicate email");
     }
 
 }

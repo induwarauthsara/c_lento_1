@@ -49,7 +49,7 @@ if(isset($_SESSION["u"])){
             Database::iud("INSERT INTO `profile_img`(`path`,`customer_customer_id`)
                    VALUES('".$file_name."','".$user_data["customer_id"]."')");
 
-                   echo("blpn gihin");
+                   echo("Success");
 
 
          }else{

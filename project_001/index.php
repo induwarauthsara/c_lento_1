@@ -1,3 +1,8 @@
+<?php
+  require "connection.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +18,7 @@
 
 <body class="d-flex justify-content-center align-items-center">
 
-
+<!--popup-->
 
 <div id="sec1" class="d-block container d-flex flex-wrap justify-content-center align-items-center py-3" style="width: 100%;">
     <section class="container d-flex flex-wrap justify-content-center align-items-center py-3">
@@ -146,6 +151,46 @@
                                 <div class="col-lg-6 col-12 p-3">
                                     <input class="form-control" type="text" placeholder="Last name" id="lname">
                                 </div>
+                                <div class="col-lg-6 col-12 p-3">
+                                    <select class="form-control" type="text" placeholder="gender" id="gender">
+                                        <option value="0">select gender</option>
+                    
+                                         <?php
+                                         
+                             $gender = Database::search("SELECT * FROM `gender`");
+
+                             for($x = 0;$x < $gender->num_rows;$x++){
+ 
+                                $gender_id =  $gender->fetch_assoc();
+
+                                 ?>
+<option value="<?php echo $gender_id["gender_id"] ?>"><?php echo $gender_id["gender_name"]; ?></option>
+                                 <?php
+
+                             }
+
+                                         ?>
+
+                            </select>
+                                </div>
+                                <div class="col-lg-6 col-12 p-3">
+                                    <select class="form-control" type="text" placeholder="country" id="country">
+                                          <option value="0">Select country</option>
+                                <?php
+  
+                         $country = Database::search("SELECT * FROM `country`");
+
+                         for($y = 0;$y < $country->num_rows;$y++){
+                           $country_id =  $country->fetch_assoc();
+                            ?>
+  <option value="<?php echo $country_id["country_id"] ?>"><?php echo $country_id["country_name"]; ?></option>
+                            <?php
+
+                         }
+       
+?>
+                                    </select>
+                                </div>
                                 <div class="col-12 p-3">
                                     <input class="form-control" type="text" placeholder="Verification code" id="verification"/>
                                 </div>
@@ -207,12 +252,12 @@
         <p class="mb-2 ms-1 fs-6 d-none" id="next" data-bs-target="#carouselExample" data-bs-slide="next" onclick="next();">
         Next - >
        </p>
-       <p class="mb-2 ms-1 fs-6 d-none" id="skip">
+       <a class="mb-2 ms-1 fs-6 d-none" id="skip" style="text-decoration: none; color: black;" href="home.php">
         Skip
-       </p>
+</a>
      
        </div>
-      </div>
+      </div> 
 <div>
       <button class="continueBtn col-12 mb-2" type="button" onclick="validation();" id="conimg">
         Continue
@@ -239,6 +284,7 @@
             
         </section>
     </div>
+    <!--popup-->
     <script src="bootstrap.js"></script>
     <script src="script.js"></script>
 </body>
